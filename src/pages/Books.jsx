@@ -22,14 +22,14 @@ const Books = ({ books: initialBooks }) => {
         books
           .slice()
           .sort(
-            (b, a) =>
+            (a, b) =>
               (b.salePrice || b.originalPrice) -
               (a.salePrice || a.originalPrice)
           )
       );
     }
     if (filter === "RATING") {
-      setBooks(books.slice().sort((b, a) => b.rating - a.rating));
+      setBooks(books.slice().sort((a, b) => b.rating - a.rating));
     }
   }
   return (
@@ -45,7 +45,7 @@ const Books = ({ books: initialBooks }) => {
                 <select
                   id="filter"
                   defaultValue="DEFAULT"
-                  onChange={(event) => filterBooks(event.targent.value)}
+                  onChange={(event) => filterBooks(event.target.value)}
                 >
                   <option value="DEFAULT" disabled>
                     Sort
