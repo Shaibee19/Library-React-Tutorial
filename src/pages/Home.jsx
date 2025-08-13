@@ -1,4 +1,3 @@
-import React from "react";
 import Landing from "../components/Landing";
 import Highlights from "../components/Highlights";
 import Features from "../components/Features";

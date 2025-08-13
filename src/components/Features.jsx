@@ -1,8 +1,7 @@
-import React from "react";
 import Book from "./ui/Book";
 import { books } from "../data";
 
-const Features = (props) => {
+const Features = () => {
   console.log(books);
   console.log();
   return (

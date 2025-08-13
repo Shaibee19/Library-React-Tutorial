@@ -1,8 +1,7 @@
-import React from "react";
 import Logo from "../assets/Library.svg";
 import { Link } from "react-router-dom";
 
-const Footer = (props) => {
+const Footer = () => {
   return (
     <footer>
       <div className="container">
